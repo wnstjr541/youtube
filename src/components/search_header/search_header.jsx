@@ -2,6 +2,8 @@ import styles from './search_header.module.css';
 import React, { useRef } from 'react';
 import { faVideo, faBell, faEllipsisV} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "./logo.png"
+import Search from "./search.png"
 
 const SearchHeader = ({ onSearch,mostPopular }) => {
   const inputRef = useRef();
@@ -29,7 +31,7 @@ const SearchHeader = ({ onSearch,mostPopular }) => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <a onClick={onHome}><img src="/logo.png" alt="logo" /></a>
+        <a onClick={onHome}><img src={Logo} alt="logo" /></a>
         <h1 className={styles.title}>
           <a href="/app.jsx" onClick={onHome}>Youtube</a>
         </h1>
@@ -44,7 +46,7 @@ const SearchHeader = ({ onSearch,mostPopular }) => {
       <button className={styles.button} type="submit" onClick={onClick}>
         <img
           className={styles.buttonImg}
-          src="/search.png"
+          src={Search}
           alt="search"
         />
       </button>
