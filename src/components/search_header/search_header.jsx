@@ -33,7 +33,7 @@ const SearchHeader = ({ onSearch,mostPopular }) => {
       <div className={styles.logo}>
         <a onClick={onHome}><img src={Logo} alt="logo" /></a>
         <h1 className={styles.title}>
-          <a href="/app.jsx" onClick={onHome}>Youtube</a>
+          <a onClick={onHome}>Youtube</a>
         </h1>
       </div>
       <input

@@ -39,7 +39,7 @@ function App({ youtube }) {
     <div className={styles.app}>
       <SearchHeader onSearch={search} mostPopular={mostPopular}/>
       <section className={styles.content}> 
-        {!menu && (
+        {!selectedVideo && (
           <VideoMenu />
         )}
         {selectedVideo && (
