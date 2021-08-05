@@ -1,30 +1,29 @@
 Youtube Clone Coding
 
-왜 yarn을 사용했는가? <br/>
-npm보다 보안, 속도 면에서 yarn이 더 우세하다는 의견이 있으며, npm위에 동작하는 패키지 매니저기에 사용했습니다.
+# 왜 yarn을 사용했는가?
 
-## 사용 기술
+npm위에 동작하는 패키지 매니저이며 npm보다 보안, 속도 면에서 yarn이 더 우세하다는 의견이 있어서 사용했습니다.
+
+# 사용 기술
 
 Javascript
 React.js
 Styled-components
-Context API
 Youtube API
 
 # 기본 메인 화면
 
 <img width="949" alt="main" src="https://user-images.githubusercontent.com/73412692/128296823-3d18428a-970a-41c7-97da-4d1311af92fe.png">
-image
 
 # 검색 화면
 
-![chrome-capture](https://user-images.githubusercontent.com/73412692/128298823-7cd6ca35-1bc0-4fde-b9e7-49039ccebfb0.gif)
+![chrome-capture (4)](https://user-images.githubusercontent.com/73412692/128301077-6b704b8b-d5cb-43ef-a386-8a4eb58f6ef0.gif)
 
 # 반응형
 
-![chrome-capture (2)](https://user-images.githubusercontent.com/73412692/128300335-4eb8a064-b60a-4722-a6b7-bf2797b11d42.gif)
+![chrome-capture (4)](https://user-images.githubusercontent.com/73412692/128301294-53c849a4-69d6-4004-8c71-0078d593f216.gif)
 
-juntube는 아래의 기능을 제공합니다.
+# juntube는 아래의 기능을 제공합니다.
 
 1. Youtube API 를 호출해 실시간으로 인기 동영상 보기 <br />
 2. Youtube API 를 호출해 원하는 동영상 검색하기 <br />
