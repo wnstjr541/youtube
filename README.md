@@ -6,10 +6,10 @@ npm위에 동작하는 패키지 매니저이며 npm보다 보안, 속도 면에
 
 # 사용 기술
 
-Javascript
-React.js
-Styled-components
-Youtube API
+Javascript <br />
+React.js <br />
+Styled-components <br />
+Youtube API <br />
 
 # 기본 메인 화면
 
