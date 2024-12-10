@@ -1,17 +1,21 @@
-import styles from './search_header.module.css';
-import React, { useRef } from 'react';
-import { faVideo, faBell, faEllipsisV} from "@fortawesome/free-solid-svg-icons";
+import styles from "./search_header.module.css";
+import React, { useRef } from "react";
+import {
+  faVideo,
+  faBell,
+  faEllipsisV,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "./logo.png"
-import Search from "./search.png"
+import Logo from "./logo.png";
+import Search from "./search.png";
 
-const SearchHeader = ({ onSearch,mostPopular }) => {
+const SearchHeader = ({ onSearch, mostPopular }) => {
   const inputRef = useRef();
   const handleSearch = () => {
     const value = inputRef.current.value;
-    if(value !== ''){
+    if (value !== "") {
       onSearch(value);
-    }else{
+    } else {
       mostPopular();
     }
   };
@@ -23,17 +27,21 @@ const SearchHeader = ({ onSearch,mostPopular }) => {
     handleSearch();
   };
 
-  const onKeyPress = event => {
-    if (event.key === 'Enter') {
+  const onKeyPress = (event) => {
+    if (event.key === "Enter") {
       handleSearch();
     }
   };
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <a onClick={onHome}><img src={Logo} alt="logo" /></a>
+        <a href="/" onClick={onHome}>
+          <img src={Logo} alt="logo" />
+        </a>
         <h1 className={styles.title}>
-          <a onClick={onHome}>Youtube</a>
+          <a href="/" onClick={onHome}>
+            Youtube
+          </a>
         </h1>
       </div>
       <input
@@ -44,19 +52,21 @@ const SearchHeader = ({ onSearch,mostPopular }) => {
         onKeyPress={onKeyPress}
       />
       <button className={styles.button} type="submit" onClick={onClick}>
-        <img
-          className={styles.buttonImg}
-          src={Search}
-          alt="search"
-        />
+        <img className={styles.buttonImg} src={Search} alt="search" />
       </button>
       <div className={styles.icons}>
-        <a><FontAwesomeIcon icon={faEllipsisV} /></a>
-        <a><FontAwesomeIcon icon={faBell} /></a>
-        <a><FontAwesomeIcon icon={faVideo} /></a>
+        <a href="#">
+          <FontAwesomeIcon icon={faEllipsisV} />
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faBell} />
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faVideo} />
+        </a>
       </div>
     </header>
   );
 };
 
-export default SearchHeader; 
+export default SearchHeader;
