@@ -1,0 +1,19 @@
+.videosDetail {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 60rem;
+}
+.videosDetail > li {
+  width: 100%;
+  display: flex;
+}
+.videosDetail > li > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.videosDetail > li > div img {
+  width: 17rem;
+  height: 9.5rem;
+}

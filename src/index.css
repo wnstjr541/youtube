@@ -1,8 +1,6 @@
 body {
   margin: 0;
-
 }
-
 
 * {
   box-sizing: border-box;
@@ -10,6 +8,36 @@ body {
 
 #root {
   justify-content: center;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
+}
+
+html,
+:root {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  html,
+  :root {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html,
+  :root {
+    font-size: 8px;
+  }
 }

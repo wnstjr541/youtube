@@ -27,14 +27,9 @@ const SearchHeader = ({ onSearch, mostPopular }) => {
     handleSearch();
   };
 
-  const onKeyPress = (event) => {
-    if (event.key === "Enter") {
-      handleSearch();
-    }
-  };
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logoContainer}>
         <a href="/" onClick={onHome}>
           <img src={Logo} alt="logo" />
         </a>
@@ -44,17 +39,18 @@ const SearchHeader = ({ onSearch, mostPopular }) => {
           </a>
         </h1>
       </div>
-      <input
-        ref={inputRef}
-        className={styles.input}
-        type="search"
-        placeholder="Search..."
-        onKeyPress={onKeyPress}
-      />
-      <button className={styles.button} type="submit" onClick={onClick}>
-        <img className={styles.buttonImg} src={Search} alt="search" />
-      </button>
-      <div className={styles.icons}>
+      <div className={styles.inputContainer}>
+        <input
+          ref={inputRef}
+          className={styles.input}
+          type="search"
+          placeholder="Search..."
+        />
+        <button className={styles.button} type="submit" onClick={onClick}>
+          <img className={styles.buttonImg} src={Search} alt="search" />
+        </button>
+      </div>
+      <div className={styles.iconsContainer}>
         <a href="#">
           <FontAwesomeIcon icon={faEllipsisV} />
         </a>

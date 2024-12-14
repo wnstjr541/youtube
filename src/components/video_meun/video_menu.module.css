@@ -1,20 +1,24 @@
-.container{
-  width: 10%;
+.container {
+  width: 23rem;
   list-style: none;
   background: black;
   margin: 0;
   padding: 0;
 }
-.container>li{
+.container > li {
   padding: 10px;
   margin-left: 10px;
 }
-.container>li:first-child{
+.container > li:first-child {
   margin-top: 30px;
 }
 
-.icons{margin-right: 10%;}
+.icons {
+  margin-right: 10%;
+}
 
-@media screen and (max-width: 1200px) { 
-  .container{display: none;}
+@media screen and (max-width: 1200px) {
+  .container {
+    display: none;
+  }
 }

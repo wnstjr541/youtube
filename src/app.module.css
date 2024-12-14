@@ -1,5 +1,7 @@
 .app {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  overflow: auto;
 }
 
 .content {
@@ -7,10 +9,16 @@
 }
 
 .detail {
-  flex: 1 1 70%;
+  display: flex;
+  width: 100%;
 }
 
 .list {
   flex: 1 1 30%;
 }
 
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}

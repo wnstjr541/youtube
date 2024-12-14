@@ -5,6 +5,7 @@ import SearchHeader from "./components/search_header/search_header";
 import VideoDetail from "./components/video_detail/video_detail";
 import VideoMenu from "./components/video_meun/video_menu";
 import useYoutube from "./service/useYoutube";
+import VideoListDetail from "./components/video_list_detail/video_list_detail";
 
 function App({ apiKey }) {
   const { videos, loading, error, mostPopular, search } = useYoutube(apiKey);
@@ -27,20 +28,25 @@ function App({ apiKey }) {
         {!selectedVideo && <VideoMenu />}
         {selectedVideo && (
           <div className={styles.detail}>
-            <VideoDetail video={selectedVideo} />
+            <VideoDetail video={selectedVideo} />{" "}
+            <VideoListDetail
+              videos={videos}
+              onVideoClick={selectVideo}
+              display={selectedVideo ? "list" : "grid"}
+            />
           </div>
         )}
-        <div className={styles.list}>
-          {loading && <p>Loading...</p>}
-          {error && <p>Error: {error}</p>}
-          {!loading && !error && (
+        {loading && <p>Loading...</p>}
+        {error && <p>Error: {error}</p>}
+        {!loading && !error && !selectedVideo && (
+          <div className={styles.list}>
             <VideoList
               videos={videos}
               onVideoClick={selectVideo}
               display={selectedVideo ? "list" : "grid"}
             />
-          )}
-        </div>
+          </div>
+        )}
       </section>
     </div>
   );

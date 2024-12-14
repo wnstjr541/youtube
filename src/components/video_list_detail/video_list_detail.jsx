@@ -2,9 +2,9 @@ import React from "react";
 import VideoItem from "../video_item/video_item";
 import styles from "./video_list.module.css";
 
-const VideoList = ({ videos, onVideoClick, display }) => (
+const VideoListDetail = ({ videos, onVideoClick, display }) => (
   <>
-    <ul className={styles.videos}>
+    <ul className={styles.videosDetail}>
       {videos.map((video) => (
         <VideoItem
           key={video.id}
@@ -17,4 +17,4 @@ const VideoList = ({ videos, onVideoClick, display }) => (
   </>
 );
 
-export default VideoList;
+export default VideoListDetail;

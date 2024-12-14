@@ -1,9 +1,5 @@
 Youtube Clone Coding
 
-# 왜 yarn을 사용했는가?
-
-npm위에 동작하는 패키지 매니저이며 npm보다 보안, 속도 면에서 yarn이 더 우세하다는 의견이 있어서 사용했습니다.
-
 # 사용 기술
 
 Javascript <br />
