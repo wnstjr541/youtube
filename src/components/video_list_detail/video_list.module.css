@@ -17,3 +17,16 @@
   width: 17rem;
   height: 9.5rem;
 }
+
+@media screen and (max-width: 800px) {
+  .videosDetail {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .videosDetail > li > div {
+    gap: 2rem;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

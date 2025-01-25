@@ -30,11 +30,11 @@ const SearchHeader = ({ onSearch, mostPopular }) => {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <a href="/" onClick={onHome}>
+        <a href="/youtube" onClick={onHome}>
           <img src={Logo} alt="logo" />
         </a>
         <h1 className={styles.title}>
-          <a href="/" onClick={onHome}>
+          <a href="/youtube" onClick={onHome}>
             Youtube
           </a>
         </h1>
@@ -51,7 +51,7 @@ const SearchHeader = ({ onSearch, mostPopular }) => {
         </button>
       </div>
       <div className={styles.iconsContainer}>
-        <a href="#">
+        <a href="#" title="설정">
           <FontAwesomeIcon icon={faEllipsisV} />
         </a>
         <a href="#">

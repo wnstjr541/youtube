@@ -29,7 +29,6 @@
 .thumbnail {
   width: 98%;
   height: 180px;
-  margin-right: 5px;
 }
 
 .metadata {
@@ -53,5 +52,6 @@
 @media screen and (max-width: 780px) {
   .container.grid {
     width: 100%;
+    height: max-content;
   }
 }

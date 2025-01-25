@@ -38,11 +38,12 @@
   padding: 0 1rem;
 }
 .inputContainer .button {
-  background-color: darkgrey;
   height: 5rem;
   outline: 0;
   width: 5rem;
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .inputContainer .buttonImg {

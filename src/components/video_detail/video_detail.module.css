@@ -18,3 +18,25 @@
   height: inherit;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 800px) {
+  .detail {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .detail iframe {
+    max-height: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .detail iframe {
+    max-height: 400px;
+    width: 90%;
+  }
+
+  .titlebox {
+    width: 90%;
+  }
+}

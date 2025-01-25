@@ -3,3 +3,12 @@
   flex-wrap: wrap;
   list-style: none;
 }
+
+@media (max-width: 1000px) {
+  .detail {
+    flex-direction: column;
+  }
+  .videos {
+    padding: 0;
+  }
+}

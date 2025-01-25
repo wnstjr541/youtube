@@ -22,3 +22,11 @@
   flex-wrap: wrap;
   list-style: none;
 }
+@media (max-width: 1000px) {
+  .detail {
+    flex-direction: column;
+  }
+  .app {
+    overflow-x: hidden;
+  }
+}
